@@ -1,0 +1,75 @@
+ros-melodic-heron-controller (0.2.0-1bionic) bionic; urgency=high
+
+  * Bumped CMake version to avoid author warning.
+  * Minor linting changes.
+  * Switched to BSD licence.
+  * Removed message generation.
+  * Added GitHub CI, codeowners and issue template.
+  * Removed launch folder to be installed because it doesn't exist
+  * Switched to std_srvs/SetBool.
+  * Fixing dependencies
+  * Removed unnecessary includes
+  * Updated package.xml to format 2
+  * Deleted unnecessary log command
+  * Updated C++ version
+  * Updated Heron parameters
+  * Deleted unused files
+  * Updated PID params
+  * Last update to the default velocity covariance setting
+  * Making time-out the default option
+  * New control parameters for debugging
+  * Initialized output force to zero and changed default velocity covariance limit
+  * Added deadzone in motor control algorithms so motor's aren't always on
+  * Fixes to new command-switching system
+  * Added service to allow for disabling heron_controller
+  * Changed command timeout system
+  * Velocity timeout was checking the wrong covariance entry in the odom twist
+  * max_fwd_force already accounts for two thrusters
+  * Parameterized covariance check on sensor data
+  * Changed controll to only depend on odometry/filtered topic
+  * Added fwd vel PID control
+  * Contributors: Guy Stoppi, Tony Baltovski
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Thu, 11 Mar 2021 05:00:00 -0000
+
+ros-melodic-heron-controller (0.1.0-1bionic) bionic; urgency=high
+
+  * Switched from updatePid to computeCommand as it is deprecated control_toolbox.
+  * Heron rename.
+  * Contributors: Tony Baltovski
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Tue, 05 Jul 2016 04:00:00 -0000
+
+ros-melodic-heron-controller (0.0.5-1bionic) bionic; urgency=high
+
+  * add installation rule for header
+  * Contributors: Yan Ma
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Wed, 05 Mar 2014 05:00:00 -0000
+
+ros-melodic-heron-controller (0.0.4-1bionic) bionic; urgency=high
+
+  * add include folder into catkin_package command
+  * Contributors: Yan Ma
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Wed, 05 Mar 2014 05:00:00 -0000
+
+ros-melodic-heron-controller (0.0.3-1bionic) bionic; urgency=high
+
+  * Negate control outputs as a stopgap until kingfisher_controller correctly accounts for the base_link -> imu_link tf.
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Thu, 24 Oct 2013 04:00:00 -0000
+
+ros-melodic-heron-controller (0.0.2-1bionic) bionic; urgency=high
+
+  * Launchfile fix for node name change.
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Tue, 22 Oct 2013 04:00:00 -0000
+
+ros-melodic-heron-controller (0.0.1-1bionic) bionic; urgency=high
+
+  * Initial hydro release of kingfisher_controller, as extracted from kingfisher_node.
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Thu, 17 Oct 2013 04:00:00 -0000
+
+
